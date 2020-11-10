@@ -6,129 +6,205 @@
 
   <link rel="stylesheet" href="style.css" ></a>
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
   <title>Navbar</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Headland+One&family=Open+Sans&display=swap" rel="stylesheet"> 
 </head>
 <body>
-  <div class="bs-docs-section clearfix">
-    <div class="row">
-      <div class="col-lg-12">
-        <br>
-        <div class="page-header">
-          <h1 id="navbars">Navbars</h1>
-        </div>
-        <br>
-        <div class="bs-component">
-          <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <a class="navbar-toggler" href="#" style="border: none;">Kit UI MW</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarColor01">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><button class="btn btn-outline-dark">Button</button></a>
-                </li>
-                <li class="nav-item my-auto">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item my-auto">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-              </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <a class="navbar-brand" href="index.html">MW UI kit</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor00" aria-controls="navbarColor00" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-              <a class="nav-link btn btn-secondary dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
+    <div class="collapse navbar-collapse" id="navbarColor00">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Components</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="navbar.html">Navbar</a>
+            <a class="dropdown-item" href="footer.html">Footer</a>
+            <a class="dropdown-item" href="forms.html">Forms</a>
+            <a class="dropdown-item" href="banners.html">Banners</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="cards.html">Cards</a>
+            <a class="dropdown-item" href="cards_list.html">Cards list</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="comments.html">Comments</a>
+            <a class="dropdown-item" href="comments_list.html">Comments list</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="landing_pages.html">Landing pages</a>
+            <a class="dropdown-item" href="elements.html">Elements</a>
+            <a class="dropdown-item" href="my_organism.html">My organism</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="bs-docs-section clearfix">
+      <div class="row">
+        <div class="col-lg-12">
+          <br>
+          <div class="page-header">
+            <h1 id="navbars">Navbars</h1>
+            <p class="text-warning" style="font-size:xx-large;">#warning : Only one dropdown can be used !</p>
+          </div>
+          <br>
+          <div class="bs-component">
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-toggler" href="#" style="border: none;">Kit UI MW</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><button class="btn btn-outline-dark">Button</button></a>
+                  </li>
+                  <li class="nav-item my-auto">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item my-auto">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item dropdown my-auto">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                  </li>
+                </ul>
+
+                <a class="nav-link btn btn-outline-dark dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
               </div>
-            </div>
-          </nav>
-        </div>
+            </nav>
+          </div>
 
-        <div class="bs-component">
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <a class="navbar-toggler" href="#" style="border: none;">Kit UI MW</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+          <div class="bs-component">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-toggler" href="#" style="border: none;">Kit UI MW</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-            <div class="collapse navbar-collapse" id="navbarColor02">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><button class="btn btn-outline-light">Button</button></a>
-                </li>
-                <li class="nav-item my-auto">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item my-auto">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-              </ul>
+              <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><button class="btn btn-outline-light">Button</button></a>
+                  </li>
+                  <li class="nav-item my-auto">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item my-auto">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item dropdown my-auto">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                  </li>
+                </ul>
 
-              <a class="nav-link btn btn-secondary dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
+                <a class="nav-link btn btn-outline-light dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
               </div>
-            </div>
-          </nav>
-        </div>
+            </nav>
+          </div>
 
-        <div class="bs-component">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <a class="navbar-toggler" href="#" style="border: none;">Kit UI MW</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+          <div class="bs-component">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-toggler" href="#" style="border: none;">Kit UI MW</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-            <div class="collapse navbar-collapse" id="navbarColor03">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><button class="btn btn-outline-dark">Button</button></a>
-                </li>
-                <li class="nav-item my-auto">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item my-auto">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-              </ul>
+              <div class="collapse navbar-collapse" id="navbarColor03">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><button class="btn btn-outline-dark">Button</button></a>
+                  </li>
+                  <li class="nav-item my-auto">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item my-auto">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item dropdown my-auto">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                  </li>
+                </ul>
 
-              <a class="nav-link btn btn-secondary dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
+                <a class="nav-link btn btn-outline-dark dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
               </div>
-            </div>
-          </nav>
+            </nav>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <br>
-  <br>
-  <br>
-  <a class="nav-link" href="index.html"><button class="btn btn-outline-info">Return to index</button></a>
+    <br>
+    <br>
+    <br>
+    <a class="nav-link" href="index.html"><button class="btn btn-outline-info">Return to index</button></a>
+
+    </div>
 
   <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
-  <title>Empty</title>
+  <title>Comments</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Headland+One&family=Open+Sans&display=swap" rel="stylesheet"> 
 </head>
@@ -51,8 +51,35 @@
   </nav>
 
   <div class="container">
+
+    <div class="media text-muted pt-3">
+      <img src="https://images.pexels.com/photos/1103832/pexels-photo-1103832.jpeg?cs=srgb&dl=pexels-oliver-sj%C3%B6str%C3%B6m-1103832.jpg&fm=jpg" alt="" class="mr-2 rounded my-auto" style="width: 2vw; height: 2vw; object-fit: cover;">
+      <p class="media-body pb-3 mb-0 lh-125 border-bottom border-gray">
+        <strong class="d-block text-gray-dark">@username</strong>
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+      </p>
+      <p class="mt-auto">On YYYY/MM/DD</p>
+    </div>
+
+    <br><br>
+    <hr class="hr-50">
+
+    <div class="bs-component">
+      <form>
+        <fieldset>
+          <legend>Comment it !</legend>
+          <div class="form-group">
+            <label for="exampleTextarea">Type your content in the box below and post it to comment</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Post comment</button>
+        </fieldset>
+      </form>
+    </div>
+
+    <br><br>
     
-  <a class="nav-link" href="index.html"><button class="btn btn-outline-info">Return to index</button></a>
+    <a class="nav-link" href="index.html"><button class="btn btn-outline-info">Return to index</button></a>
 
   </div>
 
